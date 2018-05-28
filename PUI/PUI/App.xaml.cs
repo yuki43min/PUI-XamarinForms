@@ -11,7 +11,7 @@ namespace PUI
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new NavigationPage(new MainPage() { Title = "機能を選択してください" });
         }
 
         protected override void OnStart()
